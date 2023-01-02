@@ -4,7 +4,7 @@ from matplotlib import pyplot
 ##Create new department file:
 def newDepartmentFile():
     ##creating a csv files with appropriate headers:
-    with open("Department1.csv","a") as obj:
+    with open("Department.csv","a") as obj:
         fobj=csv.writer(obj)
         ##fobj.writerow(['Department ID','Department Name','List of batches'])
         while True:
