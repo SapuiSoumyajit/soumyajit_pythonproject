@@ -119,7 +119,7 @@ def linePlot(department_id):
                 students = csv_reader[i][4].split(":")
                 break
         for student in students:
-            with open("./db/course.csv", "r", newline = "\n") as f:
+            with open("Course.csv", "r", newline = "\n") as f:
                 csv_reader = list(csv.reader(f, delimiter=","))
             all_marks = []
             for i in range(1, len(csv_reader)):
