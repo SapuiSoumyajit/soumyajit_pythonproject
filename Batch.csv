@@ -1,0 +1,6 @@
+Batch ID,Batch Name,Department Name,List of courses,List of Students
+
+CSE22,CSE 2022-26,CSE,"['C001', 'C002']","['CSE2201', 'CSE2202', 'CSE2203']"
+
+ECE22,ECE 2022-26,ECE,"['E001', 'E002']","['ECE2201', 'ECE2202']"
+
