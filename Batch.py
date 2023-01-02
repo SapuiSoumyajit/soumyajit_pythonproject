@@ -47,7 +47,7 @@ def pieChart(batch_id):
     percentages = [">=90", ">=80", ">=70", ">=60", ">=50", "Failed"]
     numbers = [0, 0, 0, 0, 0, 0]
     for student in students:
-        with open("./db/course.csv", "r", newline = "\n") as f:
+        with open("Course.csv", "r", newline = "\n") as f:
             csv_reader = list(csv.reader(f, delimiter=","))
         all_marks = []
         for i in range(1, len(csv_reader)):
