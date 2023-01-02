@@ -4,7 +4,7 @@ import json
 ##CREATING NEW STUDENT FILE.
 def newStudentFile():
     ##creating a csv files with appropriate headers:
-    with open("Student1.csv","w") as obj:
+    with open("Student.csv","w") as obj:
         fobj=csv.writer(obj)
         fobj.writerow(['Student ID','Name','Class Roll Number','Batch Name'])
         ##creating student:
@@ -60,7 +60,7 @@ def remove_student():
  def reportCard(student_id):
     name = ""
     csv_reader= []
-    with open("student.csv", "r", newline = "\n") as f:
+    with open("Student.csv", "r", newline = "\n") as f:
         csv_reader = list(csv.reader(f, delimiter=","))
     check = 0
     for i in range(0, len(csv_reader)):
@@ -75,7 +75,7 @@ def remove_student():
     a = "Student ID: " + student_id + "\n"
     b = "Name: " + name + "\n"
     f.writelines([a, b])
-    with open("course.csv", "r", newline = "\n") as fx:
+    with open("Course.csv", "r", newline = "\n") as fx:
         csv_reader = list(csv.reader(fx, delimiter=","))
     marks = []
     subjects = []
